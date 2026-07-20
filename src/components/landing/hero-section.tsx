@@ -7,6 +7,8 @@ import { Warp } from "@paper-design/shaders-react";
 
 const words = ["dices", "sientes", "muestras", "conectas", "transmites"];
 
+import bgImage from "@/assets/Architectural_stairs_with_texture_2K_202607151740_4.webp";
+
 function BlurWord({ word, trigger }: { word: string; trigger: number }) {
   const letters = word.split("");
   const STAGGER = 45;
@@ -113,7 +115,7 @@ function MagneticButton() {
 }
 
 const backgrounds = [
-  { type: "image", src: "/Architectural_stairs_with_texture_2K_202607151740_4.webp", className: "opacity-100 object-cover object-top" }
+  { type: "image", src: bgImage, className: "opacity-100 object-cover object-top" }
 ];
 
 export function HeroSection() {

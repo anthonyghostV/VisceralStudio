@@ -49,16 +49,7 @@ export function MarqueeSection() {
     return "Inter";
   });
 
-  const [color, setColor] = useState(() => {
-    if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("fs_color");
-      if (!saved || saved === "#ffffff" || saved === "#4a00d8") {
-        return "#000000";
-      }
-      return saved;
-    }
-    return "#000000";
-  });
+  const [color, setColor] = useState("#000000");
 
   const [direction, setDirection] = useState<"rightToLeft" | "leftToRight">(() => {
     if (typeof window !== "undefined") {

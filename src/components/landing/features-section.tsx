@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { ScrollReveal } from "./scroll-reveal";
+import cinematicBg from "@/assets/Cinematic_tilted_camera_angle_2K_202607160221-Recuperado.webp";
 
 
 // Floating dot particles visualization
@@ -128,7 +129,7 @@ export function FeaturesSection() {
       {/* Background Image & Particle effect stretching to full bleed screen */}
       <div className="absolute inset-0 w-full h-full overflow-hidden bg-black">
         <motion.img
-          src="/Cinematic_tilted_camera_angle_2K_202607160221-Recuperado.webp"
+          src={cinematicBg}
           alt="Glowing garden"
           width={1920}
           height={1080}

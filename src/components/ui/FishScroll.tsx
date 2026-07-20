@@ -584,12 +584,10 @@ return (
   direction={direction}
   scrollShift={scrollShift}
   style={{
-    maskImage: blurType === "letter" && blur > 0
-      ? "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 8%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%, rgba(0,0,0,0.2) 92%, rgba(0,0,0,0) 100%)"
-      : "none",
-    WebkitMaskImage: blurType === "letter" && blur > 0
-      ? "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 8%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%, rgba(0,0,0,0.2) 92%, rgba(0,0,0,0) 100%)"
-      : "none",
+    // Buggy on WebKit
+    // maskImage: blurType === "letter" && blur > 0
+    //   ? "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 8%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%, rgba(0,0,0,0.2) 92%, rgba(0,0,0,0) 100%)"
+    //   : "none",
   }}
 />
 {/* Blurred side-only canvas layer */}
@@ -613,8 +611,6 @@ return (
       height: "100%",
       filter: `blur(${blur}px)`,
       pointerEvents: "none",
-      maskImage: "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 8%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.8) 92%, rgba(0,0,0,1) 100%)",
-      WebkitMaskImage: "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 8%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.8) 92%, rgba(0,0,0,1) 100%)",
     }}
   />
 )}

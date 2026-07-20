@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import { ScrollReveal } from "./scroll-reveal";
+import manosLazosBg from "@/assets/manos_lazos.webp";
 
 export function IntegrationsSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,7 +31,7 @@ export function IntegrationsSection() {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}>
         <img
-          src="/manos_lazos.webp"
+          src={manosLazosBg}
           alt=""
           aria-hidden="true"
           width={1920}
