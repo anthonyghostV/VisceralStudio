@@ -3,8 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { ScrollReveal } from "./scroll-reveal";
-import cinematicBg from "@/assets/bg2.webp";
-
+const cinematicBg = "/Cinematic_tilted_camera_angle_2K_202607160221-Recuperado.jpg";
 
 // Floating dot particles visualization
 function ParticleVisualization() {

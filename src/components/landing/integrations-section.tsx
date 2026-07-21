@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import { ScrollReveal } from "./scroll-reveal";
-import manosLazosBg from "@/assets/bg3.webp";
+const manosLazosBg = "/manos lazos.png";
 
 export function IntegrationsSection() {
   const [isVisible, setIsVisible] = useState(false);
