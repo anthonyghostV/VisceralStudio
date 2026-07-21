@@ -7,7 +7,7 @@ import { Warp } from "@paper-design/shaders-react";
 
 const words = ["dices", "sientes", "muestras", "conectas", "transmites"];
 
-import bgImage from "@/assets/Architectural_stairs_with_texture_2K_202607151740_4.webp";
+import bgImage from "@/assets/Architectural_stairs_with_texture_2K_202607151740_3.jpg";
 
 function BlurWord({ word, trigger }: { word: string; trigger: number }) {
   const letters = word.split("");
