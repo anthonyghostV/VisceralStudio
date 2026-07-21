@@ -15,6 +15,7 @@ export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
+
   const lastScrollYRef = useRef(0);
   const scrollUpAccumulatorRef = useRef(0);
   const scrollDownAccumulatorRef = useRef(0);
@@ -146,7 +147,6 @@ export function Navigation() {
             )}
           </button>
         </div>
-
       </nav>
       
       {/* Mobile Menu - Compact Glass Dropdown Curtain */}

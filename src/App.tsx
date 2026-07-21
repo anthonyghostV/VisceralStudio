@@ -8,7 +8,6 @@ import { DevelopersSection } from "./components/landing/developers-section";
 import { MarqueeSection } from "./components/landing/marquee-section";
 import { CtaSection } from "./components/landing/cta-section";
 import { FooterSection } from "./components/landing/footer-section";
-import { TypographyConfigurator } from "./components/landing/TypographyConfigurator";
 
 export default function App() {
   useEffect(() => {
@@ -74,7 +73,6 @@ export default function App() {
       <DevelopersSection />
       <CtaSection />
       <FooterSection />
-      <TypographyConfigurator />
     </div>
   );
 }

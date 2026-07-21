@@ -51,7 +51,14 @@ export function DevelopersSection() {
 
         {/* Interactive Image Gallery */}
         <ScrollReveal duration={1200} delay={300} distance={45} className="w-full mt-12 md:mt-16">
-          <ImageSwitcher />
+          <ImageSwitcher 
+            largeImage01="/Cinematic_tilted_camera_angle_2K_202607160221-Recuperado.jpg"
+            smallImage01="/Cinematic_tilted_camera_angle_2K_202607160221-Recuperado.jpg"
+            largeImage02="/Architectural_stairs_with_texture_2K_202607151740_4.jpg"
+            smallImage02="/Architectural_stairs_with_texture_2K_202607151740_4.jpg"
+            largeImage03="/manos lazos.png"
+            smallImage03="/manos lazos.png"
+          />
         </ScrollReveal>
       </div>
     </section>
